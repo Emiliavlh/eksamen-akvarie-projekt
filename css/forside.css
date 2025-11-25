@@ -28,19 +28,10 @@ position: relative;
   z-index: 10;
 }
 
-.videns-akvarie {
-  left: 22%;
-  background-image: url("../img/viden-akvarie.png");
-}
 
 .find-fisken {
   left: 42%;
-  background-image: url("../img/find-fisken.png");
-}
-
-.color-fish {
-  left: 62%;
-  background-image: url("../img/color-fish.png");
+  background-image: url("../front-img/find-fisken.png");
 }
 
 
