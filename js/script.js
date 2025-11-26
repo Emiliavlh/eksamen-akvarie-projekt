@@ -1,15 +1,16 @@
-"use strict";
+// "use strict";
 
-const purpleFish = document.querySelector(".purple-fish");
+// const purpleFish = document.querySelector(".purple-fish");
 
-// script.js
-document.addEventListener("DOMContentLoaded", () => {
+// // script.js
 
-  const findButton = document.querySelector(".find-fisken");
+// document.addEventListener("DOMContentLoaded", () => {
+
+//   const findButton = document.querySelector(".find-fisken");
 
 
-  findButton.addEventListener("click", () => {
-    window.location.href = "./spil.html";
-  });
+//   findButton.addEventListener("click", () => {
+//     window.location.href = "./spil.html";
+//   });
 
-});
+// });
