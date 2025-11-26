@@ -11,13 +11,11 @@ position: relative;
 }
 
 /* Buttons */
-.videns-akvarie,
-.find-fisken,
-.color-fish {
+.find-fisken {
   position: absolute;
-  width: 250px;
-  height: 250px;
-  bottom: -4%;
+  width: 300px;
+  height: auto;
+  bottom: 20px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -35,38 +33,13 @@ position: relative;
 }
 
 
-.button-text-1 {
-  position: absolute;
-  left: 25%;
-  bottom: 10%;
-  z-index: 20;
-  color: white;
-  font-size: 20px;
-  font-family: poppins;
-  font-weight: bold;
-  text-shadow: 0 2px 4px black;
-}
-
 .button-text-2 {
   position: absolute;
-  left: 47%;
-  bottom: 10%;
+  left: 46%;
+  bottom: 8%;
   z-index: 20;
   color: white;
-  font-size: 20px;
-  font-family: poppins;
-  font-weight: bold;
-  text-shadow: 0 2px 4px black;
-}
-
-
-.button-text-3 {
-  position: absolute;
-  left: 65%;
-  bottom: 10%;
-  z-index: 20;
-  color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-family: poppins;
   font-weight: bold;
   text-shadow: 0 2px 4px black;
