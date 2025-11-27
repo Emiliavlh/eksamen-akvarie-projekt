@@ -304,14 +304,9 @@ z-index: 2;
   display: flex;
 }
 
-.overlay-content h2 {
-  font-size: 2rem;
-  margin-bottom: 100px;
-}
-
 .overlay h2 {
   font-family: Poppins;
-  font-size: 100px;
+  font-size: 50px;
   color: white;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
   text-align: center;
