@@ -14,7 +14,7 @@ margin: 0;
 }
 
 .gemme-fisk1 {
-  width: 150px;
+  width: 100px;
   position: absolute;
   left: 15%;
   bottom: 20%;
@@ -23,7 +23,7 @@ margin: 0;
 }
 
 .gemme-fisk2 {
-  width: 150px;
+  width: 100px;
   position: absolute;
   left: 50%;
   bottom: 15%;
@@ -32,7 +32,7 @@ margin: 0;
 }
 
 .gemme-fisk3 {
-  width: 150px;
+  width: 100px;
   position: absolute;
   left: 80%;
   bottom: 25%;
@@ -82,21 +82,21 @@ cursor: pointer;
 }
 
 .tilbagebtn{ /* Min tilbage knap, jeg har placeret nede i venstre hjørne */
-  position: fixed;
-  bottom: 16px;
-  left: 16px;
-  border: none;
-  background: transparent;
-  padding: 8px;
-  cursor: pointer;
-  z-index: 20;
+position: fixed;
+bottom: 16px;
+left: 16px;
+border: none;
+background: transparent;
+padding: 8px;
+cursor: pointer;
+z-index: 20;
 }
 
 
 .tilbagebtn img{
-  display: block;
-  width: 80px;
-  height: auto;
+display: block;
+width: 80px;
+height: auto;
 }
 
 .taleboble-container {
@@ -304,18 +304,18 @@ z-index: 2;
   display: flex;
 }
 
-.overlay-content {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-}
-
 .overlay-content h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
+.overlay h2 {
+  font-family: Poppins;
+  font-size: 100px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  text-align: center;
+}
 
 .slutparagraf {
   font-family: Poppins;
