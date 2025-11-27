@@ -11,37 +11,25 @@
   <body>
     <main>
       <!-- Overlay, dette fylder skærmen imens fisken gemmer sig -->
-      <div class="overlay"></div>
-      <!-- Slut Overlay, dette bliver brugt når spillet er slut, og vi gerne vil viderestille brugers til startskærmen, for at prøve de andre spil. -->
 
-      <div class="slutoverlay">
-        <p class="slutparagraf">Udforsk vores andre spil!</p>
-        <a class="slutbtn" href="index.html">
-          <!--- Link til forside, gemt som img af pil -->
-          <img
-            src="img/tilbage-pil.png"
-            class="slutbtn"
-            alt="Tilbage til forsiden"/>
-        </a>
+      <div class="overlay skjult">
+      <div class="overlay-content">
+      <h2>Fisken gemmer sig...</h2>
+      </div>
       </div>
 
-      <!-- Mine fisk, både den almindelige, men også den talende fisk -->
-      <img
-        src="img/fisk.png"
-        class="fisk"
-        alt="Sejlfinnet Kirurg"/>
-
+      <!-- Den store fisk, der fortæller om spillet -->
       <img
         src="img/talefisk.gif"
         class="fisk-gif skjult"
         id="giffisk"
         alt="Fisk GIF"/>
 
-      <img
-        src="img/talefisk.gif"
-        class="fisk-gif2"
-        id="giffisk2"
-        alt="Fisk GIF"/>
+      <!-- Fisken der gemmer sig -->
+
+      <img src="img/fisk.png" class="gemme-fisk1 skjult" alt="Lille fisk der gemmer sig 1">
+      <img src="img/fisk.png" class="gemme-fisk2 skjult" alt="Lille fisk der gemmer sig 2">
+      <img src="img/fisk.png" class="gemme-fisk3 skjult" alt="Lille fisk der gemmer sig 3">
 
       <img src="img/bobler-flere.gif" class="boblerfisk" alt="Levende bobler" />
 
