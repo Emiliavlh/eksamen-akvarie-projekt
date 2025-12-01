@@ -55,12 +55,6 @@ transform: translate(-50%, -50%);
 z-index: 0;
 }
 
-/* .fisk.hidden { /*Jeg bruger "hidden", da jeg allerede bruger selectoren "skjult"*/
-/* width: 200px; 
-left: 150px; 
-top: 70%;
-}  */ 
-
 .fisk-gif {
 position: absolute;
 left: 20%;
@@ -81,7 +75,7 @@ z-index: 0;
 cursor: pointer;
 }
 
-.tilbagebtn{ /* Min tilbage knap, jeg har placeret nede i venstre hjørne */
+.tilbagebtn{  /* Min tilbage knap, jeg har placeret nede i venstre hjørne */
 position: fixed;
 bottom: 16px;
 left: 16px;
@@ -271,11 +265,8 @@ z-index: 2;
   }
 }
 
-/* Når spillet, begynder vil der komme et overlay over skærmen, så man ikke kan se hvor fisken gemmer sig */
-
-/* ... existing CSS ... */
-
 /* Overlay styling */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -311,20 +302,5 @@ z-index: 2;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
   text-align: center;
 }
-
-.slutparagraf {
-  font-family: Poppins;
-  font-weight: bold;
-  font-size: 100px;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-}
-
-.slutbtn{
-  width: 200px;
-  cursor: pointer;      
-  pointer-events: auto;  
-}
-
 
 
