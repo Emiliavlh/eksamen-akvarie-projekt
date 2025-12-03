@@ -18,10 +18,11 @@ const slutBeskeder = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
- // Simpel baggrundsmusik - kun JavaScript
+ // Legende baggrundsmusik, der passer til spillet
 const music = new Audio('sound/spil-musik.mp3');
-music.volume = 0.2;
-music.play();
+music.volume = 0.2; // Volumen på musikken (20%)
+music.play(); //Starter musikken
+
   // Her har jeg samlet alle mine HTML ElementInternals, som jeg skal bruge i min js
 
   const talebobleTekst = document.querySelector(".taleboble-tekst");
@@ -106,7 +107,7 @@ music.play();
     } else {
       // reset til næste gang, og gå igang med den næste runde
       fundetIndex = 0; 
-      currentRound++;
+      currentRound++; // Dette sørger for vi kommer videre til næste runde (++) betyder at tallet bliver større med 1.
 
       if (currentRound < 3) {
         startNedtaelling(); // start næste runde

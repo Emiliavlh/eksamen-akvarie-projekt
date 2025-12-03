@@ -64,7 +64,7 @@ position: relative;
 
 .green-seaweed {
     position: absolute;
-    top:31%;
+    top:30%;
     left: 3%;
     z-index: 4;
     width: 170px;
@@ -81,7 +81,7 @@ position: relative;
 
 .green-seaweed-big {
     position: absolute;
-    top:27%;
+    top:24%;
     right: 14%;
     z-index: 4;
     width: 160px;
@@ -99,7 +99,7 @@ position: relative;
 
 .purple-seaweed {
     position: absolute;
-    top:61%;
+    top:62%;
     left: 35%;
     z-index: 3;
     width: 100px;
