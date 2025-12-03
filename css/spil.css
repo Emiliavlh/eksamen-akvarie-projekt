@@ -303,4 +303,29 @@ z-index: 2;
   text-align: center;
 }
 
+/* Runde tæller styling */
+.runde-taeller {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.797);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 50;
+}
+
+.runde-tekst {
+  margin: 0;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  color: #1c1c1d;
+}
+
+.runde-nummer {
+  font-weight: bold;
+  color: #0d3392;
+}
+
 

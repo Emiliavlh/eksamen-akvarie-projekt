@@ -18,15 +18,16 @@ const slutBeskeder = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
- // Legende baggrundsmusik, der passer til spillet
-const music = new Audio('sound/spil-musik.mp3');
-music.volume = 0.2; // Volumen på musikken (20%)
-music.play(); //Starter musikken
+  // Legende baggrundsmusik, der passer til spillet
+  const music = new Audio("sound/spil-musik.mp3");
+  music.volume = 0.2; // Volumen på musikken (20%)
+  music.play(); //Starter musikken
 
   // Her har jeg samlet alle mine HTML ElementInternals, som jeg skal bruge i min js
 
   const talebobleTekst = document.querySelector(".taleboble-tekst");
   const talebobleContainer = document.querySelector(".taleboble-container");
+  const rundeTaeller = document.querySelector(".runde-nummer");
   const fiskGif = document.querySelector(".fisk-gif");
   const boblerfisk = document.querySelector(".boblerfisk");
   const overlay = document.querySelector(".overlay");
@@ -42,6 +43,12 @@ music.play(); //Starter musikken
   let introIndex = 0; //Holder styr på hvilken besked vi er på
   let fundetIndex = 0;
   let slutIndex = 0;
+
+  // Funktion til at opdatere runde tæller
+  const opdaterRundeTaeller = () => {
+  const rundeNummer = currentRound + 1; // +1 fordi currentRound starter på 0, så den siger 1/3 istedet for 0/3
+  rundeTaeller.textContent = `${rundeNummer}/3`; // Viser den nuværende runde ud af 3 ?/3
+  };
 
   // Denne funktion viser intro beskederne én af gangen
   const visIntroBesked = () => {
@@ -97,6 +104,8 @@ music.play(); //Starter musikken
     } else if (currentRound === 2) {
       smallFish3.classList.remove("skjult"); //Tredje runde
     }
+
+    opdaterRundeTaeller(); //Dette opdaterer min rundetæller, når fisken gemmer sig (Den viser hvilken runde vi er i)
   };
 
   // Viser fundet beskeder (Taget fra array)
@@ -106,7 +115,7 @@ music.play(); //Starter musikken
       setTimeout(visFundetBesked, 3000); //Vent 3 sek mellem de viste beskeder
     } else {
       // reset til næste gang, og gå igang med den næste runde
-      fundetIndex = 0; 
+      fundetIndex = 0;
       currentRound++; // Dette sørger for vi kommer videre til næste runde (++) betyder at tallet bliver større med 1.
 
       if (currentRound < 3) {
@@ -122,7 +131,7 @@ music.play(); //Starter musikken
     if (slutIndex < slutBeskeder.length) {
       talebobleTekst.textContent = slutBeskeder[slutIndex++];
       setTimeout(visSlutBesked, 3000); // Igen, 3 sek mellem beskederne
-    } 
+    }
   };
 
   // Her er mine samlet click events for hver fisk.
@@ -156,6 +165,9 @@ music.play(); //Starter musikken
       visSlutBesked(); // slutBesked skal vises her, da der ikke er flere runder.
     }
   });
+
+  //Opdatere rundetælleren, når spillet starter (Den viser 1/3)
+  opdaterRundeTaeller();
 
   // Starter mit spil, ved at vise introBeskeder
   visIntroBesked();
