@@ -36,7 +36,7 @@ position: relative;
 .button-text-2 {
   position: absolute;
   left: 46%;
-  bottom: 8%;
+  bottom: 9%;
   z-index: 20;
   color: white;
   font-size: 30px;
@@ -50,15 +50,15 @@ position: relative;
     position: absolute;
     color: white;
     text-align: center;
-    font-family: "luckiest guy" ;
-    top: 20%;
+    font-family: "luckiest guy";
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px 40px;
     border-radius: 15px; 
-    font-family: luckiest guy;
+    
 }
 
 
@@ -319,16 +319,16 @@ position: relative;
   }
 }
 
-.brown-fish {
+.green-fish {
     position: absolute;
     top:55%;
     right: 20%;
     z-index: 3;
     width: 70px;
-    animation: brown-fish 18s linear infinite;
+    animation: green-fish 18s linear infinite;
 }
 
-@keyframes brown-fish {
+@keyframes green-fish {
   0% {
     transform: translate(0, 0) scaleX(-1);
   }
