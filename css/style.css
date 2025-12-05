@@ -28,7 +28,7 @@ position: relative;
 
 
 .find-fisken {
-  left: 42%;
+  left: 41.5%;
   background-image: url("../front-img/find-fisken.png");
 }
 
@@ -51,6 +51,7 @@ position: relative;
     color: white;
     text-align: center;
     font-family: "luckiest guy";
+    letter-spacing: 2px;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -58,7 +59,6 @@ position: relative;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px 40px;
     border-radius: 15px; 
-    
 }
 
 
