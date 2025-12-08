@@ -1,0 +1,8 @@
+<b>Projekt:</b> Interaktivt gemmelegs-spil "Find Fisken". (ExD Akvarie Projekt *Forbedret*)
+
+<b>Forberedelse 1, udskiftning af funktioner:</b> I den gamle kode, havde jeg lavet en blanding af "Timeout" og "Click" funktioner, dette skabte problemer i flowet, og ønsket om et intuitivt spil. Det er derfor blevet ændret, til kun at være "Timeout", med 3-5 sekunder, til at læse hver besked. 
+<br><b>Forberedelse 2, oprydning af kode:</b> Der var mange linjer, der gentog hinanden i CSS, så de er blevet slettet, da de alligevel ikke kom til synes på siden. Udover det, så er IMG navne ændret, før var de fyldt med store bogstaver og mellemrum.
+<br><b>Forberedelse 3, classList:</b> Den originale plan var at bruge math.random, når den lille fisk skulle gemme sig et nyt sted, men jeg synes det var for svært, i sær fordi jeg kun ville have fisken gemt i bunden af skærmen. Derfor har jeg sat 3 identiske fisk ind, med hver deres class, og så bruger jeg (navn på variable).classList.add/remove.
+<br><b>Forberedelse 4, Flere runder tilføjet:</b> Før havde jeg kun én runde, men efter jeg satte flere små fisk ind, og jeg fik styr på at manipulerer classListerne. Jeg filføjede variablen "let currentRound", og så senere i min kode, brugte jeg "if statements", for at få dem aktivireret.
+<br><b>Forberedelse 5, Rundetæller tilføjet:</b> Eftersom der er flere runder så ville det være en god ide, at tilføje en rundetæller, så man fortæller brugeren, hvor lang tid af spillet, der er tilbage. 
+<br><b>Forberedelse 6, Baggrundsmusik:</b> Til sidst, så har jeg tilføjet baggrundsmusik til "Find fisken" spillet. 
